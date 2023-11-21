@@ -3,8 +3,8 @@ import pickle
 import requests
 
 st.header('Movie Recommender System')
-movies = pickle.load(open('model/movies.pkl','rb'))
-similarity = pickle.load(open('model/similarity.pkl','rb'))
+movies = pickle.load(open('movies.pkl','rb'))
+similarity = pickle.load(open('similarity.pkl','rb'))
 
 movie_list = movies['original_title'].values
 
